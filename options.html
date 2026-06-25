@@ -29,6 +29,21 @@
 					</p>
 				</div>
 
+				<div class="toolbar">
+					<button id="exportJson" type="button" class="secondary-btn">
+						Export JSON Backup
+					</button>
+					<button id="importJson" type="button" class="secondary-btn">
+						Import JSON Backup
+					</button>
+					<input
+						id="importFile"
+						type="file"
+						accept="application/json"
+						hidden
+					/>
+				</div>
+
 				<form id="fieldForm" class="form">
 					<label>
 						Field Name
@@ -52,7 +67,18 @@
 						></textarea>
 					</label>
 
-					<button type="submit">Save Field</button>
+					<div class="form-actions">
+						<button id="submitField" type="submit">
+							Save Field
+						</button>
+						<button
+							id="cancelEdit"
+							type="button"
+							class="secondary-btn hidden"
+						>
+							Cancel Edit
+						</button>
+					</div>
 				</form>
 
 				<p id="saveStatus" class="status" aria-live="polite"></p>

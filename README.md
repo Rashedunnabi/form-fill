@@ -7,6 +7,9 @@ It supports:
 - Saving key/value fields once (for example: `full_name`, `email`, `phone`, `address`)
 - Persistent storage using Chrome local storage
 - Deleting fields one-by-one
+- Editing existing fields in place
+- Importing and exporting a JSON backup of all saved data
+- A BKKB required-fields template for Teletalk forms
 - Auto-fill when you click an on-page element that contains the text **Export**
 - Manual fill from the extension popup with **Fill This Page**
 
@@ -36,5 +39,5 @@ It supports:
 ## Notes
 
 - Field names are normalized to lowercase with underscores.
-- Matching works using form element names, IDs, placeholders, labels, and autocomplete hints.
+- Matching works using form element names, IDs, placeholders, labels, autocomplete hints, and a BKKB-specific selector profile.
 - Some custom websites may use unusual components where direct browser autofill is limited.

@@ -52,6 +52,41 @@ h2 {
 	gap: 12px;
 }
 
+.toolbar,
+.form-actions {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.template-box {
+	margin: 14px 0 18px;
+	padding: 12px;
+	border: 1px dashed var(--border);
+	border-radius: 12px;
+	background: #fff7ea;
+}
+
+.template-hint {
+	margin: 10px 0 0;
+	color: var(--muted);
+	font-size: 0.92rem;
+}
+
+.secondary-btn {
+	background: #f0ece3;
+	color: var(--text);
+	border: 1px solid var(--border);
+}
+
+.secondary-btn:hover {
+	filter: brightness(0.98);
+}
+
+.hidden {
+	display: none !important;
+}
+
 label {
 	display: grid;
 	gap: 6px;
@@ -105,6 +140,12 @@ button:hover {
 	gap: 8px;
 }
 
+.field-item-actions {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
 .field-header {
 	font-weight: 700;
 	overflow-wrap: anywhere;
@@ -119,6 +160,11 @@ button:hover {
 .delete-btn {
 	width: fit-content;
 	background: var(--danger);
+}
+
+.edit-btn {
+	width: fit-content;
+	background: #2f5d50;
 }
 
 .empty {
