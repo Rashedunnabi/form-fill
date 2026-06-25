@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Smart Form Fill Settings</title>
+		<link rel="stylesheet" href="options.css" />
+	</head>
+	<body>
+		<main class="layout">
+			<section class="card">
+				<h1>Saved Information</h1>
+				<p class="sub">
+					Add your details once. The extension can reuse them on any
+					site.
+				</p>
+
+				<form id="fieldForm" class="form">
+					<label>
+						Field Name
+						<input
+							id="fieldName"
+							name="fieldName"
+							type="text"
+							placeholder="e.g. fullName, phone, address"
+							required
+						/>
+					</label>
+
+					<label>
+						Value
+						<textarea
+							id="fieldValue"
+							name="fieldValue"
+							rows="3"
+							placeholder="Your value"
+							required
+						></textarea>
+					</label>
+
+					<button type="submit">Save Field</button>
+				</form>
+
+				<p id="saveStatus" class="status" aria-live="polite"></p>
+			</section>
+
+			<section class="card">
+				<h2>Current Fields</h2>
+				<ul id="fieldList" class="field-list"></ul>
+			</section>
+		</main>
+
+		<script src="options.js"></script>
+	</body>
+</html>
